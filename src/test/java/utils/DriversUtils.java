@@ -9,8 +9,6 @@ public class DriversUtils {
     static WebDriver driver;
 
     public static void initDriver() {
-        //System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
-        //driver = new ChromeDriver();
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
